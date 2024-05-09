@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form</title>
+
+  <style type="text/css">
+
+   
+      
+    }
+    form{
+      border: 1px solid grey;
+      width: 60%;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 0 35px 0px #000;
+      margin: 50px auto 0;
+
+
+    }
+
+    input,select,textarea{
+      display: block;
+      margin-bottom: 10px;
+      width: 85%;
+      padding: 10px;
+    }
+
+    textarea{
+      width: 90%;
+    }
+
+    input[type="submit"]{
+      width: 30%;
+      margin-left: 34%;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    input[type="radio"]{
+      display: inline;
+      width: 5%;
+    }
+
+    label{  
+      font-size: 25px;
+    }
+
+    h1{
+      text-align: center;
+      margin: 3px 0 13px;
+    }
+
+    .box{
+      display: inline-block;
+      width: 49%;
+    }
+
+    fieldset{
+      padding: 40px;
+    }
+
+    legend{
+      font-size: 30px;
+    }
+          
+    img{
+      width: 100%;
+    }
+  </style>
+
+</head>
+<body>
+
+
+
+  <form action="test" method="post">
+       
+    <fieldset>
+
+    <legend>Registration Form</legend>
+             
+    <div class="box">
+
+      <label>First Name</label>
+      <input type="text" name="first_name" placeholder="Enter First Name Here">
+    </div>
+
+    <div class="box">
+      <label>Last Name</label>
+      <input type="text" name="last_name" placeholder="Enter Last Name Here">
+    </div>
+
+    <div class="box">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Enter Email Here">
+    </div>
+
+    <div class="box">
+      <label>Mobile No.</label>
+      <input type="text" name="mobile" placeholder="Enter Mobile No. Here">
+    </div>
+
+    <div class="box">
+      <label>Date Of Birth</label>
+      <input type="date" name="dob">
+    </div>
+
+    <div class="box">
+      <label>Gender</label>
+      <div>
+        <input type="radio" name="gender" value="Male" checked> : Male
+        <input type="radio" name="gender" value="Female"> : Femail
+        <input type="radio" name="gender" value="Other"> : Other
+      </div>
+    </div>
+
+    <div class="box">
+      <label>Adhar Card No</label>
+      <input type="text" name="adhar" placeholder="Enter Adhar Card No Here">
+    </div>
+
+    <div class="box">
+      <label>Courses</label>
+      <select name="course">
+        <option value="">Select Course</option>
+        <option value="HTML">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JAVASCRIPT </option>
+        <option value="">jQUERY</option>
+        <option value="">BOOTSTRAP</option>
+        <option value="">REACTJS</option>
+        <option value="">JAVA</option>
+      </select>
+    </div>
+
+    <div class="">
+      <label>Address</label>
+      <textarea cols="" rows="5" name="address" placeholder="Address here..."></textarea>
+    </div>
+
+    <input type="submit" value="Register" name="">
+
+    </fieldset>
+
+  </form>
+
+</body>
+</html>
